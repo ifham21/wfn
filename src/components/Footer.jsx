@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from "../../src/logo.png"
 
 const footer = () => {
   return (
@@ -45,7 +46,7 @@ const footer = () => {
 
     {/* Bottom Section */}
     <div className="container mx-auto text-center mt-8 border-t pt-6">
-      <img src="/logo.png" alt="WFN Logo" className="mx-auto h-8" />
+      <img src={logo} alt="WFN Logo" className="mx-auto h-8" />
       <p className="text-sm mt-2">&copy; 2025 Warehouseexchange. All rights reserved.</p>
     </div>
   </footer>

@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaGlobe } from "react-icons/fa";
 import { Search } from "lucide-react";
+import logo from "../../src/logo.png"
 
 const navbar = () => {
   return (
     <nav className="flex items-center justify-between p-4 shadow-md bg-white">
       {/* Logo */}
-      <div className="flex items-center space-x-2">
-        <img src="/logo.png" alt="WFN Logo" className="h-8" />
-        <span className="text-xl font-bold text-red-600">WFN</span>
+      <div className="flex items-center space-x-3">
+        <img src={logo} alt="WFN Logo" className="h-10" />
       </div>
       
       {/* Navigation Links */}
