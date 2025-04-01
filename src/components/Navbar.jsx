@@ -23,7 +23,9 @@ const navbar = () => {
       {/* Actions */}
       <div className="flex items-center space-x-4">
         <Search className="w-5 h-5 text-gray-600 cursor-pointer" />
-        <button className="px-4 py-2 border rounded-md">Sign In</button>
+        <button className="px-4 py-2 border rounded-md">
+          <Link to="/signin" className="hover:text-gray-300">Sign In</Link>
+        </button>
         <button className="px-4 py-2 bg-black text-white rounded-md">Register Now</button>
         <FaGlobe className="w-5 h-5 text-gray-600 cursor-pointer" />
       </div>
