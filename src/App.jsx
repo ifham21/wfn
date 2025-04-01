@@ -25,6 +25,7 @@ function Layout() {
       <div className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/wfn" element={<Home />} />
           <Route path="/support" element={<Support />} />
           <Route path="/warehouses" element={<Warehouses />} />
           <Route path="/about" element={<About />} />
