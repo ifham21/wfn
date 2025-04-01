@@ -1,14 +1,22 @@
 import React from 'react'
 import { TextField, Button, MenuItem } from "@mui/material";
 import { Search } from "@mui/icons-material";
+import img from "../../src/img.jpg"
 
 const Home = () => {
   return (
     <div className="relative w-full h-screen flex flex-col items-center justify-center bg-gray-100">
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/path-to-your-background-image.jpg')" }}></div>
+      <div className="absolute inset-0 bg-cover bg-center" style={{ 
+    backgroundImage: `url(${img})`, 
+    backgroundSize: "cover", 
+    backgroundPosition: "center",
+    filter: "brightness(80%)" // Reduces brightness (acts like opacity)
+  }}>
+    <div className="absolute inset-0 bg-white opacity-50"></div> 
+  </div>
       <div className="relative text-center p-6 max-w-2xl">
         <h1 className="text-4xl font-bold text-gray-900">Find Your Perfect Warehouse, Anytime, Anywhere</h1>
-        <p className="text-gray-600 mt-4">
+        <p className="text-gray-900 mt-4">
           Discover the warehouse that works for you. Whether you're growing a business or need personal storage, our global network lets you search and book flexible spaces that meet your needs, anytime, anywhere.
         </p>
       </div>
